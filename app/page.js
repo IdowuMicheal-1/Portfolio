@@ -164,8 +164,8 @@ export default function Home() {
 
       <ContactWrapper>
         <ContactHeader>Contact</ContactHeader>
-        <ContactText>{`I'm currently looking to join a cross-functional team that values improving people's lives
-through accessible design. or have a project in mind? Let's connect.${`<br />`}idowumicheal506@gmail.com`}</ContactText>
+        <ContactText>{`I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. or have a project in mind? Let's connect.
+idowumicheal506@gmail.com`}</ContactText>
       </ContactWrapper>
 
       <Footer />
