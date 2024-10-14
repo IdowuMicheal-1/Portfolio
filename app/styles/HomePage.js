@@ -1,23 +1,61 @@
 'use client'
 import styled from "styled-components";
-import { COLORS } from "@/utils/constant";
+import { COLORS, QUERIES } from "@/utils/constant";
 
 export const Wrapper = styled.div`
-margin-top: 30px;
-padding-left: 120px;
+margin-top: 60px;
+/* padding-left: 120px; */
+width: 100%;
+text-align: center;
+
+@media ${QUERIES.tabletAndSmaller} {
+    padding-left: 0px;
+    width: 80%;
+    & > img{
+        width:100vw;
+        height: fit-content;
+    }
+}
+
+@media ${QUERIES.phoneAndSmaller} {
+    width: 60%;
+}
+`
+
+export const TopWrapper = styled.div`
+    @media ${QUERIES.tabletAndSmaller} {
+        display: none;
+    }
 `
 
 export const WrapperTitle = styled.p`
 font-family: var(--font-preahvihear);
 font-size: ${40/16}rem;
-padding-left: 120px;
+
+@media ${QUERIES.tabletAndSmaller} {
+    font-size: ${20/16}rem;
+}
+
+@media ${QUERIES.phoneAndSmaller} {
+    font-size: ${16/16}rem;
+}
 `
 
 export const WrapperParagraph = styled.p`
 font-family: var(--font-preahvihear);
 font-size: ${14/16}rem;
-padding-left: 120px;
-width: 600px;
+/* padding-left: 120px; */
+width: 650px;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+padding:15px;
+
+
+@media ${QUERIES.tabletAndSmaller} {
+    font-size: ${12/16}rem;
+    width: 100vw;
+}
 `
 
 export const ExperiencedWrapper = styled.div`

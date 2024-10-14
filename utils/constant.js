@@ -12,3 +12,15 @@ export const COLORS = {
    purples300:"#B292FF",
    purple100:"#9857D3"
 }
+
+export const BREAKPOINTS = {
+    mobile:500,
+    tablet:768,
+    laptop:1440
+}
+
+export const QUERIES = {
+   phoneAndSmaller:`(max-width:${BREAKPOINTS.mobile/16}rem)`,
+   tabletAndSmaller:`(max-width:${BREAKPOINTS.tablet/16}rem)`,
+   LaptopAndSmaller:`(max-width:${BREAKPOINTS.laptop/16}rem)`
+}

@@ -1,6 +1,6 @@
 'use client'
 import styled from 'styled-components'
-import { COLORS } from '@/utils/constant'
+import { COLORS, QUERIES } from '@/utils/constant'
 
 
 export const Wrapper = styled.div`
@@ -15,6 +15,10 @@ export const Wrapper = styled.div`
     border-radius:100px;
     font-family: var(--font-raleway);
     font-size: ${20/16}rem;
+/* 
+    @media ${QUERIES.tabletAndSmaller} {
+        display: hidden;
+    } */
 `
 
 export const ListWrapper = styled.ul`

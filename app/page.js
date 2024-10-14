@@ -30,7 +30,8 @@ import {
   TextWpp,
   LinkWrapper,
   ContactWrapper,
-  ContactHeader
+  ContactHeader,
+  TopWrapper
 } from "./styles/HomePage";
 import javascript from "./assets/javascriptCard.svg";
 import online from "./assets/online.svg";
@@ -44,7 +45,9 @@ import Footer from "./components/Footer/Footer";
 export default function Home() {
   return (
     <div>
+      <TopWrapper>
       <Header />
+      </TopWrapper>
       <Wrapper>
         <Image src={hero} alt="About me" />
         <WrapperTitle>{`I'm a Software Engineer.|`} </WrapperTitle>
