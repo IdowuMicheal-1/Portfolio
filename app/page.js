@@ -47,7 +47,7 @@ export default function Home() {
       <Header />
       <Wrapper>
         <Image src={hero} alt="About me" />
-        <WrapperTitle>I'm a Software Engineer.| </WrapperTitle>
+        <WrapperTitle>{`I'm a Software Engineer.|`} </WrapperTitle>
         <WrapperParagraph>
           A self-taught full-stack developer, dedicated to building robust and
           user-centric digital products that strike a balance between technical
@@ -65,15 +65,15 @@ export default function Home() {
         </ExperiencedDiv>
         <CardWrapper>
           <CardOne>
-            <Image src={javascript} />
+            <Image src={javascript} alt="javascript"/>
             <p>Javascript</p>
           </CardOne>
           <CardTwo>
-            <Image src={react} />
+            <Image src={react} alt="react"/>
             <p>React</p>
           </CardTwo>
           <CardThree>
-            <Image src={next} height={52} width={52} />
+            <Image src={next} height={52} width={52} alt="next"/>
             <p>Next.JS</p>
           </CardThree>
         </CardWrapper>
@@ -93,7 +93,7 @@ export default function Home() {
             <ExpSub>
               May 2024{" "}
               <span>
-                <Image src={online} />
+                <Image src={online} alt="online"/>
               </span>
               Present <br />
               Brookes - Nigeria
@@ -140,18 +140,18 @@ export default function Home() {
               product that received positive client feedback.
             </ImageTextOne>
             <LinkWrapper>
-              <Image src={link} /> Live Link
+              <Image src={link} alt="link" /> Live Link
             </LinkWrapper>
           </TextWpp>
-          {/* <Image src={imgBackOne} width={669} height={165} /> */}
-          <Image src={projectOne} />
+        
+          <Image src={projectOne} alt="ecommere"/>
         </ImageStyle>
       </div>
 
       <ContactWrapper>
         <ContactHeader>Contact</ContactHeader>
-        <ContactText>I'm currently looking to join a cross-functional team that values improving people's lives
-through accessible design. or have a project in mind? Let's connect.<br />idowumicheal506@gmail.com</ContactText>
+        <ContactText>{`I'm currently looking to join a cross-functional team that values improving people's lives
+through accessible design. or have a project in mind? Let's connect.<br />idowumicheal506@gmail.com`}</ContactText>
       </ContactWrapper>
 
       <Footer />
