@@ -69,7 +69,7 @@ export const ExperiencedWrapper = styled.div`
 
   @media ${QUERIES.tabletAndSmaller} {
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 10px;
   }
 `;
 
