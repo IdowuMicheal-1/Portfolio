@@ -1,5 +1,5 @@
 'use client'
-import { COLORS } from "@/utils/constant";
+import { COLORS, QUERIES } from "@/utils/constant";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -27,6 +27,10 @@ width:80%;
     border-radius:100px;
     font-family: var(--font-raleway);
     font-size: ${20/16}rem;
+
+    @media ${QUERIES.tabletAndSmaller} {
+        padding:10px 20px;
+    }
 `
 
 export const FooterTitle = styled.h4`
@@ -45,4 +49,8 @@ export const FooterSubTwo = styled.div`
 export const WrapperCopy = styled.p`
     padding-left: 208px;
     margin-top: 20px;
+
+    @media ${QUERIES.tabletAndSmaller} {
+        padding-left: 60px;
+    }
 `

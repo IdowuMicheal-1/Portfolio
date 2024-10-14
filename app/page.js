@@ -13,7 +13,9 @@ import {
   CardOne,
   CardTwo,
   CardThree,
-  ContactText
+  ContactText,
+  TextPrj,
+  TextPrj1
 } from "./styles/HomePage";
 import {
   TextOne,
@@ -32,7 +34,8 @@ import {
   ContactWrapper,
   ContactHeader,
   TopWrapper,
-  ExpDivTwo
+  ExpDivTwo,
+  ProjectTitle
 } from "./styles/HomePage";
 import javascript from "./assets/javascriptCard.svg";
 import online from "./assets/online.svg";
@@ -40,8 +43,10 @@ import next from "./assets/next2.svg";
 import react from "./assets/react.svg";
 import imgBackOne from "./assets/ImageBack1.svg";
 import projectOne from "./assets/projectOne.svg";
+// import jfj from "./assets/mobilePrj.svg";
 import link from "./assets/link.svg";
 import Footer from "./components/Footer/Footer";
+import image from "./assets/image.png"
 
 export default function Home() {
   return (
@@ -119,20 +124,14 @@ export default function Home() {
       <div>
         <ImageStyle>
           <TextWpp>
+            <TextPrj>
             <h4 style={{ marginLeft: 20, color: "#9857D3", fontSize: "16px" }}>
               Featured Project
             </h4>
-            <p
-              style={{
-                marginLeft: 20,
-                marginBottom: 20,
-                fontSize: "34px",
-                color: "#CCD6F6",
-                fontWeight: "700",
-              }}
-            >
+            <ProjectTitle>
               Frontend E-commerce Store
-            </p>
+            </ProjectTitle>
+            </TextPrj>
             <ImageTextOne>
               A React-based eCommerce web app designed to enhance the online
               shopping experience for clients. Features include a robust search
@@ -143,11 +142,22 @@ export default function Home() {
               allowed me to practice React concepts and deliver a polished
               product that received positive client feedback.
             </ImageTextOne>
+            {/* <div style={{maxWidth:'100%'}}> */}
+
+            <Image src={image} alt="ecommere" height={200} style={{width:'80vw',marginLeft:'50px',marginRight:'auto'}}/>
+            {/* </div> */}
             <LinkWrapper>
               <Image src={link} alt="link" /> Live Link
             </LinkWrapper>
           </TextWpp>
-        
+          {/* <TextPrj1>
+            <h4 style={{ marginLeft: 20, color: "#9857D3", fontSize: "16px" }}>
+              Featured Project
+            </h4>
+            <ProjectTitle>
+              Frontend E-commerce Store
+            </ProjectTitle>
+            </TextPrj1> */}
           <Image src={projectOne} alt="ecommere"/>
         </ImageStyle>
       </div>
