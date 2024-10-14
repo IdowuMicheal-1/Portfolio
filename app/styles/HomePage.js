@@ -225,6 +225,7 @@ export const ExpDivOne = styled.div`
 `;
 
 export const ExpDivTwo = styled.div`
+color: white;
   @media (max-width: 1100px) {
     margin-top: 60px;
   }
