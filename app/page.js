@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/Header/Header";
 import hero from "./assets/hero.svg";
+import Link from "next/link";
 import {
   Wrapper,
   WrapperTitle,
@@ -147,7 +148,7 @@ export default function Home() {
             <Image src={image} alt="ecommere" height={200} style={{width:'80vw',marginLeft:'50px',marginRight:'auto'}}/>
             {/* </div> */}
             <LinkWrapper>
-              <Image src={link} alt="link" /> Live Link
+              <Image src={link} alt="link" /> <Link href="https://tim-care-ecommerce.vercel.app/">Live Link</Link>
             </LinkWrapper>
           </TextWpp>
           {/* <TextPrj1>
