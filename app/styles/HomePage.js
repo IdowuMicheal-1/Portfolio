@@ -180,10 +180,12 @@ align-items:center
 export const ImageTextOne = styled.p`
     background-color: ${COLORS.gray800};
     padding: 26px 34px;
+    padding-right: 60px;
     border-radius: 14px;
     margin-right: -250px;
-    z-index: 1;
     margin-left: 20px;
+    font-family: var(--font-raleway);
+   text-align: left;
 `
 export const featuredTexts = styled.h4`
     color:${COLORS.purple100};
@@ -201,7 +203,8 @@ margin-top: 10px;
 border: none;
 background-color: ${COLORS.gray800};
 padding: 10px 10px;
-gap:10px
+gap:10px;
+z-index: -1;
 `
 
 export const ContactWrapper = styled.div`
