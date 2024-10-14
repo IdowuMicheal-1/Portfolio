@@ -31,7 +31,8 @@ import {
   LinkWrapper,
   ContactWrapper,
   ContactHeader,
-  TopWrapper
+  TopWrapper,
+  ExpDivTwo
 } from "./styles/HomePage";
 import javascript from "./assets/javascriptCard.svg";
 import online from "./assets/online.svg";
@@ -102,8 +103,8 @@ export default function Home() {
               Brookes - Nigeria
             </ExpSub>
           </ExpDivOne>
-          <div>
-            <h4>Brookes</h4>
+          <ExpDivTwo>
+            <h4 style={{color:'#B292FF'}}>Brookes</h4>
             <p>
               Developed responsive web interfaces using HTML, CSS, and
               JavaScript, enhancing user experience and accessibility.
@@ -111,7 +112,7 @@ export default function Home() {
               engagement. Optimized website performance and integrated RESTful
               APIs for real-time updates.
             </p>
-          </div>
+          </ExpDivTwo>
         </ExpWrapper>
       </div>
 

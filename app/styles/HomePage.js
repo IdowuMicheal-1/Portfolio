@@ -68,12 +68,21 @@ export const ExperiencedWrapper = styled.div`
     align-items: center;
     width: 100%;
 
+    @media ${QUERIES.tabletAndSmaller} {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
 `
 
 export const ExperiencedDiv = styled.div`
 margin-right: 60px;
 display: flex;
 /* flex-basis: 800px; */
+
+@media ${QUERIES.tabletAndSmaller} {
+    text-align: center;
+}
 `
 export const ExpSpan = styled.span`
     font-size: ${80/16}rem;
@@ -85,10 +94,13 @@ export const CardWrapper = styled.div`
 display: flex;
 gap:40px;
 flex: 1;
-/* overflow-y: auto; */
 
-/* display: flex;
-flex: 1; */
+@media ${QUERIES.tabletAndSmaller} {
+    /* width: 100%; */
+    min-width: 100vw;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
 `
 
 export const CardOne = styled.div`
@@ -105,6 +117,12 @@ padding-left: 50px;
     color: ${COLORS.gray700};
     font-weight: bold;
 }
+
+/* @media ${QUERIES.tabletAndSmaller} {
+    & > img {
+        width: 80%;
+    }
+} */
 `
 
 export const CardTwo = styled.div`
@@ -161,7 +179,11 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-margin-top:140px
+margin-top:140px;
+
+@media ${QUERIES.tabletAndSmaller} {
+    margin-top:60px;
+}
 `
 
 export const WorkText = styled.h4`
@@ -171,7 +193,14 @@ export const WorkText = styled.h4`
     padding-left: 120px;
     margin-top: 60px;
     margin-bottom: 30px;
+
+    @media ${QUERIES.tabletAndSmaller} {
+        font-size: ${25/16}rem;
+        text-align: center;
+        padding-left: 0px;
+    }
 `
+
 
 export const ExpWrapper = styled.div`
     background-color: ${COLORS.gray800};
@@ -182,6 +211,14 @@ export const ExpWrapper = styled.div`
     height: fit-content;
     padding: 84px 77px;
     display: flex;
+
+@media (max-width:1100px) {
+    border-radius: 40px;
+    padding-top: 70px;
+    padding-left:38px ;
+    padding-right: 67px;
+    flex-direction: column;
+}
 `
 
 export const ExpDivOne = styled.div`
@@ -190,10 +227,20 @@ display: flex;
     flex-direction: column;
 `
 
+export const ExpDivTwo = styled.div`
+@media (max-width:1100px) {
+    margin-top: 60px;
+}
+`
+
 export const ExpText = styled.h4`
     font-size: ${28/16}rem;
     color: white;
     font-family: var(--font-raleway);
+
+    @media ${QUERIES.tabletAndSmaller} {
+        font-size: ${16/16}rem;
+    }
 `
 
 export const ExpSub = styled.h4`
