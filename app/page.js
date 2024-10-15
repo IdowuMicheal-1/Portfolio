@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Header from "./components/Header/Header";
 import hero from "./assets/hero.svg";
 import Link from "next/link";
+import hello from './assets/hello.svg'
 import {
   Wrapper,
   WrapperTitle,
@@ -36,7 +37,7 @@ import {
   ContactHeader,
   TopWrapper,
   ExpDivTwo,
-  ProjectTitle
+  ProjectTitle,
 } from "./styles/HomePage";
 import javascript from "./assets/javascriptCard.svg";
 import online from "./assets/online.svg";
@@ -48,8 +49,13 @@ import projectOne from "./assets/projectOne.svg";
 import link from "./assets/link.svg";
 import Footer from "./components/Footer/Footer";
 import image from "./assets/image.png"
+import hellomobile from './assets/hellomobile.svg'
+// import { transform } from "next/dist/build/swc";
+// import { useState } from "react/cjs/react.production.min";
 
 export default function Home() {
+ 
+
   return (
     <div>
       <TopWrapper>
@@ -94,6 +100,10 @@ export default function Home() {
         <TextTwo>React</TextTwo>
         <TextFour>NodeJS</TextFour>
       </TextWrapper>
+      {/* <HelloWrapper ref={WrapperRef}>
+      <Image src={hello} alt="hello" style={{ transform: `translateX(${translateX}) rotate(80deg)`}}/>
+      <Image src={hellomobile} alt="hello" style={{ transform: `translateX(${translateX}) rotate(80deg)`}}/>
+      </HelloWrapper> */}
       <div>
         <WorkText>Work Experience</WorkText>
         <ExpWrapper>
@@ -126,7 +136,7 @@ export default function Home() {
         <ImageStyle>
           <TextWpp>
             <TextPrj>
-            <h4 style={{ marginLeft: 20, color: "#9857D3", fontSize: "16px" }}>
+            <h4 style={{ marginLeft: 20, color: "#9857D3", fontSize: "16px",zIndex:'1' }}>
               Featured Project
             </h4>
             <ProjectTitle>
@@ -148,17 +158,10 @@ export default function Home() {
             <Image src={image} alt="ecommere" height={200} style={{width:'80vw',marginLeft:'50px',marginRight:'auto'}}/>
             {/* </div> */}
             <LinkWrapper>
-              <Image src={link} alt="link" /> <Link href="https://tim-care-ecommerce.vercel.app/">Live Link</Link>
+            <Link href="https://tim-care-ecommerce.vercel.app/"><Image src={link} alt="link" /> Live Link</Link>
             </LinkWrapper>
           </TextWpp>
-          {/* <TextPrj1>
-            <h4 style={{ marginLeft: 20, color: "#9857D3", fontSize: "16px" }}>
-              Featured Project
-            </h4>
-            <ProjectTitle>
-              Frontend E-commerce Store
-            </ProjectTitle>
-            </TextPrj1> */}
+         
           <Image src={projectOne} alt="ecommere"/>
         </ImageStyle>
       </div>

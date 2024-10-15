@@ -172,6 +172,7 @@ export const TextFour = styled.h4`
 `;
 
 export const TextWrapper = styled.div`
+position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -274,6 +275,7 @@ export const ImageStyle = styled.div`
 
   & > img {
     max-height: fit-content;
+    /* display: block; */
   }
   @media ${QUERIES.tabletAndSmaller} {
     flex-direction: column-reverse;
@@ -305,6 +307,7 @@ export const ImageTextOne = styled.p`
   margin-left: 20px;
   font-family: var(--font-raleway);
   text-align: left;
+  width: 100vw;
 
   @media ${QUERIES.tabletAndSmaller} {
     max-width: 80%;
@@ -343,6 +346,10 @@ export const LinkWrapper = styled.button`
   background-color: ${COLORS.gray800};
   padding: 10px 10px;
   gap: 10px;
+
+  & > a{
+    align-items: center;
+  }
   
   @media ${QUERIES.tabletAndSmaller} {
     margin-left: 40px;
@@ -371,6 +378,47 @@ export const ContactHeader = styled.div`
     font-size: ${20 / 16}rem;
   }
 `;
+
+// export const HelloWrapper = styled.div`
+// position: relative;
+// pointer-events: none;
+
+
+
+
+// & > img{
+//   position: absolute;
+  
+// top:0;
+// left:0;
+// margin-top: 18rem;
+// transition: transform 200ms;
+// transform: rotate(75deg);
+// }
+
+// @media ${QUERIES.tabletAndSmaller} {
+//   & > img{
+//   position: absolute;
+  
+// top:0;
+// left:0;
+// margin-top: 26rem;
+// transition: transform 200ms;
+// transform: rotate(75deg);
+// }
+// }
+
+// @media ${QUERIES.tabletAndSmaller} {
+//   & > img:nth-of-type(1){
+//     display: none;
+// }
+//   & > img:nth-of-type(2){
+//     margin-top: 30rem;
+// }
+// }
+
+
+// `
 
 export const ContactText = styled.p`
   font-size: ${15 / 16}rem;
